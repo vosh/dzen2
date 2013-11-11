@@ -1,0 +1,2 @@
+﻿#! /bin/sh
+conky | dzen2 -ta r -fn '-*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*' -h '14' -w '916' -x '450' -bg "#252627" -fg "#618485"

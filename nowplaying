@@ -1,0 +1,5 @@
+#!/bin/bash
+
+buttons=" ^ca(1, mpc prev) ^i(/home/vosh/.icons/stlarch/back1.xbm) ^ca() ^ca(1, mpc pause) ^i(/home/vosh/.icons/stlarch/pause1.xbm) ^ca() ^ca(1, mpc play) ^i(/home/vosh/.icons/stlarch/play1.xbm) ^ca() ^ca(1, mpc next) ^i(/home/vosh/.icons/stlarch/forward1.xbm) ^ca() "
+
+(echo "$buttons"; sleep 10) | dzen2 -bg '#252627' -fg '#618485' -fn '-*-*-medium-r-*-*-9-*-*-*-*-*-*-*' -y 16 -x 840 -w 100 -h 15 -e 'onstart=uncollapse;button2=exit;button3=exit;button4=exit;button5=exit'
