@@ -7,3 +7,5 @@ battery script uses acpi
 clickable area at the clock uses gsimplecal
 
 make sure to point to the scripts in .conkyrc and adjust the position of the windows in the scripts.
+
+![Screenshot](http://goput.it/sk1l.png)
