@@ -3,6 +3,12 @@ out_to_console yes
 update_interval 1.0
 total_run_times 0
 use_spacer left
-#  ${if_mpd_playing}   mpd: $mpd_artist - ${mpd_title} $endif   vol: ${execi 2 ~/.mixer.sh}
 TEXT
-${if_mpd_playing} ^ca(1, ~/.wm_scripts/nowplaying)^fg(\#618485)^i(/home/vosh/.icons/stlarch/note1.xbm) ^fg(\#ededf7) $mpd_artist - ${mpd_title}^ca()  $endif ^ca(1, urxvt -e htop)^fg(\#618485)^i(/home/vosh/.icons/stlarch/cpu13.xbm) ^fg(\#ededf7)${cpu cpu0}%   ^fg(\#618485)^i(/home/vosh/.icons/stlarch/temp1.xbm)^fg(\#ededf7)${hwmon temp 1}°C   ^fg(\#618485)^i(/home/vosh/.icons/stlarch/mem1.xbm)^fg(\#ededf7)${mem}^ca()   ^fg(\#618485)^ca(1, firefox "http://gmail.com")^i(/home/vosh/.icons/stlarch/mail1.xbm) ^fg(\#ededf7)${execi 300 ~/.wm_scripts/gmail.py}^ca()   ^fg(\#618485)^i(/home/vosh/.icons/stlarch/vol1.xbm) ^fg(\#ededf7) ${execi 2 ~/.wm_scripts/mixer.sh}   ^ca(1, gsimplecal)^fg(\#618485)^i(/home/vosh/.icons/stlarch/clock2.xbm)^ca() ^fg(\#ededf7)${time %d.%m.%Y %a %k:%M}  
+${if_mpd_playing} ^ca(1, ~/.wm_scripts/nowplaying)^fg(\#618485)^i(/home/vosh/.icons/stlarch/note1.xbm) ^fg(\#ededf7) $mpd_artist - ${mpd_title}^ca()  $endif \
+^ca(1, urxvt -e htop)^fg(\#618485)^i(/home/vosh/.icons/stlarch/cpu13.xbm) ^fg(\#ededf7)${cpu cpu0}%   \
+^fg(\#618485)^i(/home/vosh/.icons/stlarch/temp1.xbm)^fg(\#ededf7)${hwmon temp 1}°C   \
+^fg(\#618485)^i(/home/vosh/.icons/stlarch/mem1.xbm)^fg(\#ededf7)${mem}^ca()   \
+^fg(\#618485)^ca(1, firefox "http://gmail.com")^i(/home/vosh/.icons/stlarch/mail1.xbm) \
+^fg(\#ededf7)${execi 300 ~/.wm_scripts/gmail.py}^ca()   \
+^fg(\#618485)^i(/home/vosh/.icons/stlarch/vol1.xbm) ^fg(\#ededf7) ${execi 2 ~/.wm_scripts/mixer.sh}   \
+^ca(1, gsimplecal)^fg(\#618485)^i(/home/vosh/.icons/stlarch/clock2.xbm)^ca() ^fg(\#ededf7)${time %d.%m.%Y %a %k:%M}  
